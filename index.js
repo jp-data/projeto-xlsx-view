@@ -29,6 +29,35 @@ const rows = dadosEmJson.marca.map((_, indice) => ({
 worksheet.addRows(rows);
 // indices das colunas em negrito
 worksheet.getRow(1).font = {bold: true}
+// indices das colunas com fundo amarelo
+worksheet.getCell('A1').fill = {
+    type: "pattern",
+    pattern:"solid",
+    fgColor:{argb:'FFFF00'},
+    bgColor: {argb:'FFFF00'}
+}
+
+worksheet.getCell('B1').fill = {
+    type: "pattern",
+    pattern:"solid",
+    fgColor:{argb:'FFFF00'},
+    bgColor: {argb:'FFFF00'}
+}
+
+worksheet.getCell('C1').fill = {
+    type: "pattern",
+    pattern:"solid",
+    fgColor:{argb:'FFFF00'},
+    bgColor: {argb:'FFFF00'}
+}
+
+worksheet.getCell('D1').fill = {
+    type: "pattern",
+    pattern:"solid",
+    fgColor:{argb:'FFFF00'},
+    bgColor: {argb:'FFFF00'}
+}
+
 
 
 // try e catch para tratar o assíncronismo e verificar possíveis erros
